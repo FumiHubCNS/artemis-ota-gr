@@ -363,7 +363,8 @@ src-test/CMakeFiles/G__test.dir/G__test.cxx.o: src-test/G__test.cxx \
   /home/fumintu/work/install/artemis_install/include/TArtemisObject.h \
   /home/fumintu/work/install/artemis_install/include/ITiming.h \
   /home/fumintu/work/install/root_install/include/Rtypes.h \
-  /home/fumintu/work/install/artemis_install/include/ICharge.h
+  /home/fumintu/work/install/artemis_install/include/ICharge.h \
+  ../src-test/TOtukaresamaProcessor.h
 
 
 /home/fumintu/work/install/artemis_install/include/ICharge.h:
@@ -849,6 +850,8 @@ src-test/G__test.cxx:
 /home/fumintu/work/install/root_install/include/TString.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
+
+../src-test/TOtukaresamaProcessor.h:
 
 /usr/include/c++/11/cctype:
 

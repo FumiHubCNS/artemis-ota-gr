@@ -36,6 +36,7 @@
 
 // Header files passed as explicit arguments
 #include "TRandomTVDCClusterDataGenerator.h"
+#include "TOtukaresamaProcessor.h"
 
 // Header files passed via #pragma extra_include
 
@@ -76,6 +77,40 @@ namespace ROOT {
    static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal(static_cast<const ::art::TRandomTVDCClusterDataGenerator*>(nullptr)); R__UseDummy(_R__UNIQUE_DICT_(Init));
 } // end of namespace ROOT
 
+namespace ROOT {
+   static void *new_artcLcLTOtukaresamaProcessor(void *p = nullptr);
+   static void *newArray_artcLcLTOtukaresamaProcessor(Long_t size, void *p);
+   static void delete_artcLcLTOtukaresamaProcessor(void *p);
+   static void deleteArray_artcLcLTOtukaresamaProcessor(void *p);
+   static void destruct_artcLcLTOtukaresamaProcessor(void *p);
+   static void streamer_artcLcLTOtukaresamaProcessor(TBuffer &buf, void *obj);
+
+   // Function generating the singleton type initializer
+   static TGenericClassInfo *GenerateInitInstanceLocal(const ::art::TOtukaresamaProcessor*)
+   {
+      ::art::TOtukaresamaProcessor *ptr = nullptr;
+      static ::TVirtualIsAProxy* isa_proxy = new ::TInstrumentedIsAProxy< ::art::TOtukaresamaProcessor >(nullptr);
+      static ::ROOT::TGenericClassInfo 
+         instance("art::TOtukaresamaProcessor", ::art::TOtukaresamaProcessor::Class_Version(), "TOtukaresamaProcessor.h", 21,
+                  typeid(::art::TOtukaresamaProcessor), ::ROOT::Internal::DefineBehavior(ptr, ptr),
+                  &::art::TOtukaresamaProcessor::Dictionary, isa_proxy, 16,
+                  sizeof(::art::TOtukaresamaProcessor) );
+      instance.SetNew(&new_artcLcLTOtukaresamaProcessor);
+      instance.SetNewArray(&newArray_artcLcLTOtukaresamaProcessor);
+      instance.SetDelete(&delete_artcLcLTOtukaresamaProcessor);
+      instance.SetDeleteArray(&deleteArray_artcLcLTOtukaresamaProcessor);
+      instance.SetDestructor(&destruct_artcLcLTOtukaresamaProcessor);
+      instance.SetStreamerFunc(&streamer_artcLcLTOtukaresamaProcessor);
+      return &instance;
+   }
+   TGenericClassInfo *GenerateInitInstance(const ::art::TOtukaresamaProcessor*)
+   {
+      return GenerateInitInstanceLocal(static_cast<::art::TOtukaresamaProcessor*>(nullptr));
+   }
+   // Static variable to force the class initialization
+   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal(static_cast<const ::art::TOtukaresamaProcessor*>(nullptr)); R__UseDummy(_R__UNIQUE_DICT_(Init));
+} // end of namespace ROOT
+
 namespace art {
 //______________________________________________________________________________
 atomic_TClass_ptr TRandomTVDCClusterDataGenerator::fgIsA(nullptr);  // static to hold class pointer
@@ -109,6 +144,43 @@ TClass *TRandomTVDCClusterDataGenerator::Dictionary()
 TClass *TRandomTVDCClusterDataGenerator::Class()
 {
    if (!fgIsA.load()) { R__LOCKGUARD(gInterpreterMutex); fgIsA = ::ROOT::GenerateInitInstanceLocal((const ::art::TRandomTVDCClusterDataGenerator*)nullptr)->GetClass(); }
+   return fgIsA;
+}
+
+} // namespace art
+namespace art {
+//______________________________________________________________________________
+atomic_TClass_ptr TOtukaresamaProcessor::fgIsA(nullptr);  // static to hold class pointer
+
+//______________________________________________________________________________
+const char *TOtukaresamaProcessor::Class_Name()
+{
+   return "art::TOtukaresamaProcessor";
+}
+
+//______________________________________________________________________________
+const char *TOtukaresamaProcessor::ImplFileName()
+{
+   return ::ROOT::GenerateInitInstanceLocal((const ::art::TOtukaresamaProcessor*)nullptr)->GetImplFileName();
+}
+
+//______________________________________________________________________________
+int TOtukaresamaProcessor::ImplFileLine()
+{
+   return ::ROOT::GenerateInitInstanceLocal((const ::art::TOtukaresamaProcessor*)nullptr)->GetImplFileLine();
+}
+
+//______________________________________________________________________________
+TClass *TOtukaresamaProcessor::Dictionary()
+{
+   fgIsA = ::ROOT::GenerateInitInstanceLocal((const ::art::TOtukaresamaProcessor*)nullptr)->GetClass();
+   return fgIsA;
+}
+
+//______________________________________________________________________________
+TClass *TOtukaresamaProcessor::Class()
+{
+   if (!fgIsA.load()) { R__LOCKGUARD(gInterpreterMutex); fgIsA = ::ROOT::GenerateInitInstanceLocal((const ::art::TOtukaresamaProcessor*)nullptr)->GetClass(); }
    return fgIsA;
 }
 
@@ -171,10 +243,67 @@ namespace ROOT {
    }
 } // end of namespace ROOT for class ::art::TRandomTVDCClusterDataGenerator
 
+namespace art {
+//______________________________________________________________________________
+void TOtukaresamaProcessor::Streamer(TBuffer &R__b)
+{
+   // Stream an object of class art::TOtukaresamaProcessor.
+
+   //This works around a msvc bug and should be harmless on other platforms
+   typedef ::art::TOtukaresamaProcessor thisClass;
+   UInt_t R__s, R__c;
+   if (R__b.IsReading()) {
+      Version_t R__v = R__b.ReadVersion(&R__s, &R__c); if (R__v) { }
+      //This works around a msvc bug and should be harmless on other platforms
+      typedef art::TProcessor baseClass0;
+      baseClass0::Streamer(R__b);
+      fOutputName.Streamer(R__b);
+      R__b >> fNum;
+      R__b >> fScale;
+      R__b.CheckByteCount(R__s, R__c, thisClass::IsA());
+   } else {
+      R__c = R__b.WriteVersion(thisClass::IsA(), kTRUE);
+      //This works around a msvc bug and should be harmless on other platforms
+      typedef art::TProcessor baseClass0;
+      baseClass0::Streamer(R__b);
+      fOutputName.Streamer(R__b);
+      R__b << fNum;
+      R__b << fScale;
+      R__b.SetByteCount(R__c, kTRUE);
+   }
+}
+
+} // namespace art
+namespace ROOT {
+   // Wrappers around operator new
+   static void *new_artcLcLTOtukaresamaProcessor(void *p) {
+      return  p ? new(p) ::art::TOtukaresamaProcessor : new ::art::TOtukaresamaProcessor;
+   }
+   static void *newArray_artcLcLTOtukaresamaProcessor(Long_t nElements, void *p) {
+      return p ? new(p) ::art::TOtukaresamaProcessor[nElements] : new ::art::TOtukaresamaProcessor[nElements];
+   }
+   // Wrapper around operator delete
+   static void delete_artcLcLTOtukaresamaProcessor(void *p) {
+      delete (static_cast<::art::TOtukaresamaProcessor*>(p));
+   }
+   static void deleteArray_artcLcLTOtukaresamaProcessor(void *p) {
+      delete [] (static_cast<::art::TOtukaresamaProcessor*>(p));
+   }
+   static void destruct_artcLcLTOtukaresamaProcessor(void *p) {
+      typedef ::art::TOtukaresamaProcessor current_t;
+      (static_cast<current_t*>(p))->~current_t();
+   }
+   // Wrapper around a custom streamer member function.
+   static void streamer_artcLcLTOtukaresamaProcessor(TBuffer &buf, void *obj) {
+      ((::art::TOtukaresamaProcessor*)obj)->::art::TOtukaresamaProcessor::Streamer(buf);
+   }
+} // end of namespace ROOT for class ::art::TOtukaresamaProcessor
+
 namespace {
   void TriggerDictionaryInitialization_libtest_Impl() {
     static const char* headers[] = {
 "TRandomTVDCClusterDataGenerator.h",
+"TOtukaresamaProcessor.h",
 nullptr
     };
     static const char* includePaths[] = {
@@ -196,6 +325,7 @@ nullptr
 #pragma clang diagnostic ignored "-Wreturn-type-c-linkage"
 extern int __Cling_AutoLoading_Map;
 namespace art{class __attribute__((annotate("$clingAutoload$TRandomTVDCClusterDataGenerator.h")))  TRandomTVDCClusterDataGenerator;}
+namespace art{class __attribute__((annotate("$clingAutoload$TOtukaresamaProcessor.h")))  TOtukaresamaProcessor;}
 )DICTFWDDCLS";
     static const char* payloadCode = R"DICTPAYLOAD(
 #line 1 "libtest dictionary payload"
@@ -204,10 +334,12 @@ namespace art{class __attribute__((annotate("$clingAutoload$TRandomTVDCClusterDa
 #define _BACKWARD_BACKWARD_WARNING_H
 // Inline headers
 #include "TRandomTVDCClusterDataGenerator.h"
+#include "TOtukaresamaProcessor.h"
 
 #undef  _BACKWARD_BACKWARD_WARNING_H
 )DICTPAYLOAD";
     static const char* classesHeaders[] = {
+"art::TOtukaresamaProcessor", payloadCode, "@",
 "art::TRandomTVDCClusterDataGenerator", payloadCode, "@",
 nullptr
 };

@@ -19,6 +19,8 @@
 #pragma link off all functions;
 
 #pragma link C++ class art::TRandomTVDCClusterDataGenerator;
+#pragma link C++ class art::TOtukaresamaProcessor;
+
 #endif // __CINT__
 
 #endif // LINKDEF_USER_H

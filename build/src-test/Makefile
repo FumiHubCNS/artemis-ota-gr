@@ -213,6 +213,30 @@ G__test.cxx.s:
 	cd /home/fumintu/work/github/artemis-ota-gr/build && $(MAKE) $(MAKESILENT) -f src-test/CMakeFiles/G__test.dir/build.make src-test/CMakeFiles/G__test.dir/G__test.cxx.s
 .PHONY : G__test.cxx.s
 
+TOtukaresamaProcessor.o: TOtukaresamaProcessor.cc.o
+.PHONY : TOtukaresamaProcessor.o
+
+# target to build an object file
+TOtukaresamaProcessor.cc.o:
+	cd /home/fumintu/work/github/artemis-ota-gr/build && $(MAKE) $(MAKESILENT) -f src-test/CMakeFiles/test.dir/build.make src-test/CMakeFiles/test.dir/TOtukaresamaProcessor.cc.o
+.PHONY : TOtukaresamaProcessor.cc.o
+
+TOtukaresamaProcessor.i: TOtukaresamaProcessor.cc.i
+.PHONY : TOtukaresamaProcessor.i
+
+# target to preprocess a source file
+TOtukaresamaProcessor.cc.i:
+	cd /home/fumintu/work/github/artemis-ota-gr/build && $(MAKE) $(MAKESILENT) -f src-test/CMakeFiles/test.dir/build.make src-test/CMakeFiles/test.dir/TOtukaresamaProcessor.cc.i
+.PHONY : TOtukaresamaProcessor.cc.i
+
+TOtukaresamaProcessor.s: TOtukaresamaProcessor.cc.s
+.PHONY : TOtukaresamaProcessor.s
+
+# target to generate assembly for a file
+TOtukaresamaProcessor.cc.s:
+	cd /home/fumintu/work/github/artemis-ota-gr/build && $(MAKE) $(MAKESILENT) -f src-test/CMakeFiles/test.dir/build.make src-test/CMakeFiles/test.dir/TOtukaresamaProcessor.cc.s
+.PHONY : TOtukaresamaProcessor.cc.s
+
 TRandomTVDCClusterDataGenerator.o: TRandomTVDCClusterDataGenerator.cc.o
 .PHONY : TRandomTVDCClusterDataGenerator.o
 
@@ -254,6 +278,9 @@ help:
 	@echo "... G__test.o"
 	@echo "... G__test.i"
 	@echo "... G__test.s"
+	@echo "... TOtukaresamaProcessor.o"
+	@echo "... TOtukaresamaProcessor.i"
+	@echo "... TOtukaresamaProcessor.s"
 	@echo "... TRandomTVDCClusterDataGenerator.o"
 	@echo "... TRandomTVDCClusterDataGenerator.i"
 	@echo "... TRandomTVDCClusterDataGenerator.s"

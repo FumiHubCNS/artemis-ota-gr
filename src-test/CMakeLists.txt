@@ -2,10 +2,12 @@ set(LIB_NAME test)
 
 set(SOURCES
     TRandomTVDCClusterDataGenerator.cc
+    TOtukaresamaProcessor.cc
 )
 
 set(HEADERS
     TRandomTVDCClusterDataGenerator.h
+    TOtukaresamaProcessor.h
 )
 
 add_library(${LIB_NAME} SHARED ${SOURCES})

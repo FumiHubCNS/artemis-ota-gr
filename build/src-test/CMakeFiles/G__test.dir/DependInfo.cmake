@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/fumintu/work/github/artemis-ota-gr/src-test/linkdef_user.h" "/home/fumintu/work/github/artemis-ota-gr/build/src-test/G__test.cxx"
   "/home/fumintu/work/github/artemis-ota-gr/src-test/TRandomTVDCClusterDataGenerator.h" "/home/fumintu/work/github/artemis-ota-gr/build/src-test/G__test.cxx"
+  "/home/fumintu/work/github/artemis-ota-gr/src-test/TOtukaresamaProcessor.h" "/home/fumintu/work/github/artemis-ota-gr/build/src-test/G__test.cxx"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

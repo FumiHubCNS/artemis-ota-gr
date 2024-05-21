@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/fumintu/work/github/artemis-ota-gr/src-test/TOtukaresamaProcessor.h
+TProcessor.h
+-
+
 /home/fumintu/work/github/artemis-ota-gr/src-test/TRandomTVDCClusterDataGenerator.h
 TProcessor.h
 -

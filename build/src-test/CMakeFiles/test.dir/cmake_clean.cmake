@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test.dir/TOtukaresamaProcessor.cc.o"
+  "CMakeFiles/test.dir/TOtukaresamaProcessor.cc.o.d"
   "CMakeFiles/test.dir/TRandomTVDCClusterDataGenerator.cc.o"
   "CMakeFiles/test.dir/TRandomTVDCClusterDataGenerator.cc.o.d"
   "libtest.pdb"
