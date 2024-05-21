@@ -1,0 +1,9 @@
+.
+..
+.vncdisplay
+figs
+output
+*.root
+*.pdf
+*.jpeg
+*.png

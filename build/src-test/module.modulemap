@@ -1,0 +1,7 @@
+module "test" {
+  requires cplusplus
+  module "TRandomTVDCClusterDataGenerator.h" { header "TRandomTVDCClusterDataGenerator.h" export * }
+  link "libtest.so"
+  export *
+}
+

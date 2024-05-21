@@ -1,0 +1,7 @@
+{ decls }
+namespace art {  }
+
+[ libtest.so ]
+# List of selected classes
+class art::TRandomTVDCClusterDataGenerator
+header TRandomTVDCClusterDataGenerator.h

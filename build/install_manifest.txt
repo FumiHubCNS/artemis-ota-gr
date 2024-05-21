@@ -1,0 +1,2 @@
+/home/fumintu/work/github/artemis-ota-gr/install/lib/libtest.so
+/home/fumintu/work/github/artemis-ota-gr/install/lib/libtest_rdict.pcm

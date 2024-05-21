@@ -1,0 +1,14 @@
+/home/fumintu/work/github/artemis-ota-gr/build/CMakeFiles/edit_cache.dir
+/home/fumintu/work/github/artemis-ota-gr/build/CMakeFiles/rebuild_cache.dir
+/home/fumintu/work/github/artemis-ota-gr/build/CMakeFiles/list_install_components.dir
+/home/fumintu/work/github/artemis-ota-gr/build/CMakeFiles/install.dir
+/home/fumintu/work/github/artemis-ota-gr/build/CMakeFiles/install/local.dir
+/home/fumintu/work/github/artemis-ota-gr/build/CMakeFiles/install/strip.dir
+/home/fumintu/work/github/artemis-ota-gr/build/src-test/CMakeFiles/test.dir
+/home/fumintu/work/github/artemis-ota-gr/build/src-test/CMakeFiles/G__test.dir
+/home/fumintu/work/github/artemis-ota-gr/build/src-test/CMakeFiles/edit_cache.dir
+/home/fumintu/work/github/artemis-ota-gr/build/src-test/CMakeFiles/rebuild_cache.dir
+/home/fumintu/work/github/artemis-ota-gr/build/src-test/CMakeFiles/list_install_components.dir
+/home/fumintu/work/github/artemis-ota-gr/build/src-test/CMakeFiles/install.dir
+/home/fumintu/work/github/artemis-ota-gr/build/src-test/CMakeFiles/install/local.dir
+/home/fumintu/work/github/artemis-ota-gr/build/src-test/CMakeFiles/install/strip.dir
